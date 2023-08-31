@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VI Fashion</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('service') }}">Services</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('team') }}">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mum1">
+        <h1>Welcome to VI Fashion</h1>
+        <br>
+        <br>
+        <img src="{{ url_for('static', filename='images/sew1.jpg') }}" width="50%" height="50%" alt="Image"> 
+        <p>where internet sews. . . </p>
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('about') }}" class="cta-button">Explore Now</a>
+
+    </section>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2023 VI Fashion. All rights reserved.</p>
+    </footer>
+</body>
+</html>
